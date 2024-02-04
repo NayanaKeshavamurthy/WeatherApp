@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#AF9463"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/recyclerHourDay"
+        android:layout_width="98dp"
+        android:layout_height="24dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/recyclerHourTime"
+        android:layout_width="89dp"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerHourDay" />
+
+    <ImageView
+        android:id="@+id/recyclerHourIcon"
+        android:layout_width="101dp"
+        android:layout_height="33dp"
+        android:contentDescription="IMAGE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerHourTime" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="391dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_begin="124dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/recyclerHourTemp"
+        android:layout_width="88dp"
+        android:layout_height="27dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerHourIcon" />
+
+    <TextView
+        android:id="@+id/recyclerHourDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerHourTemp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
