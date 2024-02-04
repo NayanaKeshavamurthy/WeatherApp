@@ -25,7 +25,7 @@ public class WeatherDownloader
     private static boolean scaleF;
 
     private static final String weatherURL = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/";
-    private static final String yourAPIKey = "4RHVD8YNYXLL8US6JFW3LEDW6";
+    private static final String yourAPIKey = ""; //insert your api key here
 
     public static void downloadWeather(MainActivity mainActivityIn, String location, boolean fahrenheit, SharedPreferences sf)
     {
